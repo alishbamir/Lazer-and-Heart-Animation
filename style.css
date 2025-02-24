@@ -1,0 +1,53 @@
+h1 {
+  color: purple;
+  font-weight: 800;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, 50%);
+
+}
+
+div {
+  height: 10px;
+  width: 100vw;
+  background-color: blueviolet;
+  box-shadow: 0 0 30px blueviolet;
+  position: absolute;
+  left: 50%;
+
+  pointer-events: none;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background-color: rgb(10, 10, 10);
+}
+
+span {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background: url("./img/heart_833472.png");
+  left: 50%;
+  top: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  animation: animate 0.6s;
+}
+
+@keyframes animate {
+  0% {
+    /* transform:translate(-50%,-50%); */
+    opacity: 1;
+    filter: hue-rotate(0);
+  }
+
+  100% {
+    /* transform:translate(-50%,-5000%); */
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+}
